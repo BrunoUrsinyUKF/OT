@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.ukf.ot.KalkulackaController">
+   <children>
+      <VBox alignment="CENTER" layoutX="19.0" layoutY="29.0" prefHeight="390.0" prefWidth="682.0">
+         <children>
+            <TextField fx:id="prveCislo" prefHeight="25.0" prefWidth="569.0" promptText="Zadajte prvé číslo" />
+            <TextField fx:id="druheCislo" promptText="Zadajte druhé číslo" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#vypocitaj" text="Sčítanie" />
+                  <Button mnemonicParsing="false" onAction="#vypocitaj" text="Odčítanie" />
+                  <Button mnemonicParsing="false" onAction="#vypocitaj" text="Násobenie" />
+                  <Button mnemonicParsing="false" onAction="#vypocitaj" text="Delenie" />
+               </children>
+            </HBox>
+            <Label text="Zadajte platné čísla">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="vysledok" />
+         </children>
+      </VBox>
+      <Label text="Label" />
+   </children>
+</Pane>
