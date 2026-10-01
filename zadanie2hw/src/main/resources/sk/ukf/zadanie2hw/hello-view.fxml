@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.ukf.zadanie2hw.HelloController">
+   <children>
+      <TextField fx:id="cislo" layoutX="32.0" layoutY="54.0" prefHeight="25.0" prefWidth="188.0" promptText="Zadaj číslo" />
+      <Button layoutX="230.0" layoutY="54.0" mnemonicParsing="false" onAction="#preved" text="Prevod" />
+      <Label fx:id="vysledok" layoutX="332.0" layoutY="58.0" text="Zadaj číslo a vyber jednotky" />
+      <RadioButton fx:id="kilometre" layoutX="182.0" layoutY="93.0" mnemonicParsing="false" text="km">
+         <toggleGroup>
+            <ToggleGroup fx:id="jednotky" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="metre" layoutX="139.0" layoutY="93.0" mnemonicParsing="false" text="m" toggleGroup="$jednotky" />
+      <RadioButton fx:id="centimetre" layoutX="88.0" layoutY="93.0" mnemonicParsing="false" text="cm" toggleGroup="$jednotky" />
+      <RadioButton fx:id="milimetre" layoutX="32.0" layoutY="93.0" mnemonicParsing="false" text="mm" toggleGroup="$jednotky" />
+   </children>
+</AnchorPane>
